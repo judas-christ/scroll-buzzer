@@ -1,0 +1,14 @@
+{
+  "name": "scroll-buzzer",
+  "version": "1.0.0",
+  "description": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "uglifyjs scripts/scroll-buzzer.js -m -c -o scripts/scroll-buzzer.min.js"
+  },
+  "author": "Daniel Hägglund",
+  "license": "ISC",
+  "devDependencies": {
+    "uglify-js": "^2.4.24"
+  }
+}
