@@ -1,11 +1,12 @@
 {
   "name": "scroll-buzzer",
   "version": "1.0.0",
-  "description": "0.0.0",
-  "main": "index.js",
+  "description": "A little buzz for your scroll",
+  "main": "scripts/scroll-buzzer.js",
   "scripts": {
     "build": "uglifyjs scripts/scroll-buzzer.js -m -c -o scripts/scroll-buzzer.min.js"
   },
+  "repository": "https://github.com/judas-christ/scroll-buzzer.git",
   "author": "Daniel Hägglund",
   "license": "ISC",
   "devDependencies": {

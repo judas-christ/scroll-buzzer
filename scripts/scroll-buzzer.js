@@ -12,12 +12,14 @@
   osc.connect(gain);
   gain.connect(audioContext.destination);
   gain.gain.value = 0;
+  osc.frequency.value = 1;
   osc.start();
 
-  var oldScrollValue = window.scrollY;
-  var newScrollValue, dScroll;
-  var scrollFreqMod = 20;
-  var scrollTimeout = null;
+  var oldScrollValue = window.scrollY,
+      newScrollValue,
+      dScroll,
+      scrollFreqMod = 20,
+      scrollTimeout = null;
   document.addEventListener('scroll', function(e) {
     newScrollValue = window.scrollY;
     dScroll = Math.abs(newScrollValue - oldScrollValue);
